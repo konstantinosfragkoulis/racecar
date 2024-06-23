@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/konstantinos/projects/racecar-racecar-pierce/labs/final/time_trial.py", line 644, in <module>
+    rc.go()
+  File "/home/konstantinos/projects/racecar-racecar-pierce/labs/final/../../library/simulation/racecar_core_sim.py", line 176, in go
+    self.__handle_update()
+  File "/home/konstantinos/projects/racecar-racecar-pierce/labs/final/../../library/simulation/racecar_core_sim.py", line 221, in __handle_update
+    self.__update()
+  File "/home/konstantinos/projects/racecar-racecar-pierce/labs/final/time_trial.py", line 555, in update
+    marker.detect_colors(image, potentialColors)
+  File "/home/konstantinos/projects/racecar-racecar-pierce/labs/final/../../library/racecar_utils.py", line 1057,
+in detect_colors
+    contours = find_contours(cropped_image, hsv_lower, hsv_upper)
+  File "/home/konstantinos/projects/racecar-racecar-pierce/labs/final/../../library/racecar_utils.py", line 392, in find_contours
+    hsv_image = cv.cvtColor(color_image, cv.COLOR_BGR2HSV)
+cv2.error: OpenCV(4.6.0) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
